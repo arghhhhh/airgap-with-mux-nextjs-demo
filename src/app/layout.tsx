@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { TranscendProvider } from "@/lib/transcend-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <TranscendProvider airgapSrc="https://transcend-cdn.com/cm-test/eb535ba5-bb66-4728-af60-8a0ecd7d0788/airgap.js">
+        <body className={inter.className}>{children}</body>
+      </TranscendProvider>
     </html>
   );
 }

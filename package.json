@@ -18,7 +18,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@transcend-io/airgap.js-types": "^10.15.0",
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "@mux/mux-node": "^8.8.0",
+    "@mux/mux-player": "^2.7.0",
+    "@mux/mux-player-react": "^2.7.0"
   }
 }
