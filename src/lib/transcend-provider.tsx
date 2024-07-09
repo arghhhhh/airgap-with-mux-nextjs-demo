@@ -93,7 +93,7 @@ export const TranscendProvider: React.FC<ConsentProviderProps> = ({
 
   return (
     <>
-      <Script src={airgapSrc} id="transcend.io" strategy="beforeInteractive"/>
+      <Script src={airgapSrc} id="transcend.io" strategy="beforeInteractive" data-prompt="1"/>
       <ConsentContext.Provider value={{ airgap, transcend }}>
         {children}
       </ConsentContext.Provider>
